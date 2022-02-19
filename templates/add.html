@@ -6,13 +6,14 @@
 </head>
 <body>
     <form action="{{ url_for('add') }}" method="POST">
-        <label>Book Name</label>
-        <input name="title" type="text">
-        <label>Book Author</label>
-        <input  name="author" type="text">
-        <label>Rating</label>
-        <input  name="rating" type="text">
+        <label for="title">Book Name</label>
+        <input type="text" id="title" name="title">
+        <label for="author">Book Author</label>
+        <input type="text" id="author" name="author">
+        <label for="rating">Rating</label>
+        <input type="text" id="rating" name="rating">
         <button type="submit">Add Book</button>
     </form>
+    <a href="{{ url_for('home') }}">Return to Main Page</a>
 </body>
 </html>
